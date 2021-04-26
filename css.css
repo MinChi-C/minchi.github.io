@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:"微軟正黑體";
+	margin:0px;
+	height:1350px;/*100%*/
+	width:100%;/*1520px*/
+}
+
+#header{
+	height:70px;/*10%避免縮小視窗時格式跑掉
+	/*width:1520px;*/
+	width:100%;
+	background-color:white;
+	text-align:right;
+	position:fixed;
+	top:0px;
+	right:0px;
+	z-index:1;
+	margin:0px;
+	/*border:1px black solid;*/
+}
+#header a{
+	font-size: 20px;
+	color: inherit;
+	color:#696969;
+    text-decoration: none;/*除底線*/
+	font-weight:bolder;
+	
+}
+#header a:hover{
+	background-color:#FFE4E1;
+}
+.logo{
+	height:70px;
+	position:absolute;
+	/*left:640px;*/
+	left:43%;
+}
+.font_header{
+	position:absolute;
+	bottom:0px;
+	left:65%;
+	
+}
+
+#nav{/*跑馬燈列*/
+	height:30px;
+	width:100%;/*1520px*/
+	background-color:#a9a9a9;
+	position:fixed;
+	top:70px;
+	color:white; 
+}
+#center{
+	height:1150px;
+	width:1520px;
+	position:absolute;
+	top:100px;
+}
+#page{/*分類區+商品區*/
+	height:1150px;
+	width:1140px;
+ 	padding:0px;
+ 	position: absolute;
+ 	top:0px ;
+ 	left:190px;
+	right:190px;
+ 	margin:0px;	
+}
+#in_frame{/*商品區*/
+	height:1120px;
+	width:880px;
+	float:right;
+	color: black;
+	/*font-size: 15px*/
+	position:absolute;
+	top:0px;
+	right:0px;
+	padding:10px;
+	margin:0px;
+	/*border: 1px red solid;*/
+	overflow:yes;
+}
+#frame{
+	height:1120px;
+	width:880px;
+	float:right;
+	position:absolute;
+	top:0px;
+	right:0px;
+	
+	padding:10px;
+	margin:0px;
+	/*border: 1px blue solid;*/
+	overflow:hidden;
+	
+}
+#sidebar{
+	height:1150px;
+	width:228px;
+	float:left;
+	margin:0px;
+	background-color: white;
+}
+#sidebar a{ /*商品分類區內部按鈕格式設定*/
+	display:block;
+	padding:20px 5px 20px 5px;
+	text-decoration:none;
+	margin:10px auto 10px auto; 
+	color:black; 
+	/*background-color:pink;*/
+}
+/*#sidebar a:active{
+	color:red;
+}*/
+#footer{
+	clear:both;
+	height:100px;
+	width:1520px;
+	background-color: #BC8F8F ;
+	position:absolute;
+	top:1250px;
+	margin:0px;
+	color:white;
+	font-size: 15px;
+	text-align:center;
+	padding: 5px;
+	/*border: 1px black solid;*/
+
+}
+
+.font_ct{ /*商品分類區按鈕字設定*/
+	text-align:center; /*字體置中*/
+	
+}
+.font_ct a{ /*商品分類區按鈕字體格式設定*/
+	background-color:#ADD8E6;
+}
+.font_ct a:active{/*針對個別連結的按鈕做變化*/
+	border:white 5px solid;
+	
+}
+.sub_item{ /*子按鈕一開始未出現*/
+	display:none;
+}
+.sub_item a{ /*商品分類區子按鈕超連結的格式設定*/
+	position:relative;
+	left:20px;
+	background-color:#D8BFD8;
+}
+.item:hover > .sub_item{ /*>:對子按鈕做格式變化*/
+	display:block;
+}
+.img_cont2{
+	height:254px;
+	width:254px;
+	margin-bottom:5px;
+}
+.content2{/*商品內容方框*/
+	display:block;
+	height:370px;
+	width:280px;
+	margin:0px 10px 10px 0px;
+	float:left;
+	padding:0px 0px 0px 0px;
+	/*border:1px black solid;*/
+}
+.font_cont2{
+	text-align:center;
+}
+.font_cont2 a{
+	color: inherit; 
+    text-decoration: none;
+}
+.img_tag1{/*購買標籤*/
+	height:30px;
+}
+.content1{/*廣告區*/
+	height:200px;
+	width:870px;
+	margin:0px;
+	padding:0px;
+}
+.img_cont1{/*廣告區圖片*/
+	height:200px;
+	width:870px;
+}
+.img_news{
+	width:65%;
+	position:absolute;
+	right:150px;
+}	
+#ad{
+	height:150px;
+	position:fixed;
+	top:50%;
+	right:0px;
+}
+.img_ad{
+	height:100%;
+}
+.sign-in{
+	/*height:200PX;
+	width:200px;*/
+	position:absolute;
+	right:50%;
+	text-align:center;
+	font-size:20px;
+}
