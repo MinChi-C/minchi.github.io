@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HW1-1</title>
+		
+	</head>
+	<body>
+		<p>中獎號碼404.036.629.516</p>
+		<script language='javascript'>
+			
+			var n1=0;
+			var n2=0;
+			var n3=0;
+			var n4=0;
+			for(var i=0; i<1000; i++){
+				var x = Math.floor(Math.random()*1000);//0-999
+				if(x== 404){
+					++n1;
+				}
+				else if(x==036){
+					++n2;
+				}
+				else if(x==629){
+					++n3;
+				}
+				else if(x==516){
+					++n4;
+				}
+			}
+			document.write("404 has "+ n1+"times"+"<br>");
+			document.write("036 has "+ n2+"times"+"<br>");
+			document.write("629 has "+ n3+"times"+"<br>");
+			document.write("516 has "+ n4+"times"+"<br>");
+		
+		</script>
+		
+		
+	</body>
+</html>
